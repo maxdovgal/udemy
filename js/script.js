@@ -1,11 +1,22 @@
 "use strict";
 
-let numberOfFiles = prompt("how many films do you watch", );
-console.log(numberOfFiles);
+const numberOfFiles = +prompt("how many films do you watch?", "");
+ //1
 
-// let nunber = 4.6;
+const personalMovieDb = {
+    count: numberOfFiles,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};  //2
 
-// console.log(4/0);
-// console.log('4/0'*9);
+const   a = prompt("one of the last watching films" , ""),
+        b = prompt("the mark of the film" , ""),
+        c = prompt("one of the last watching films" , ""),
+        d = prompt("the mark of the film" , "");
 
-// const persone = '5';
+personalMovieDb.movies[a] = b;
+personalMovieDb.movies[c] = d;
+
+console.log(personalMovieDb);
