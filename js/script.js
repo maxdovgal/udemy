@@ -11,7 +11,7 @@ const personalMovieDb = {
     privat: false
 };  //2
 
-for (let i = 0; i < personalMovieDb.count; i++){
+for (let i = 0; i < 2; i++){
     const   a = prompt("Один из последних фильмов" , ""),
             b = prompt("Оценка фильма" , "");
     
@@ -23,5 +23,16 @@ for (let i = 0; i < personalMovieDb.count; i++){
         i--;
     }
 }
+
+if (personalMovieDb.count < 10) {
+    console.log('Просмотрено довольно мало фильмов');
+} else if (personalMovieDb.count >= 10 && personalMovieDb.count <= 30){
+    console.log('Просмотрено довольно много фильмов');
+} else if (personalMovieDb.count > 30) {
+    console.log('Вы киноман');
+}  else {
+    console.log('error');
+}
+
 
 console.log(personalMovieDb);
