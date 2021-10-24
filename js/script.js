@@ -70,3 +70,16 @@ function writeYourGenres () {
 writeYourGenres ();
 
 console.log(personalMovieDb);
+
+const options = {
+    name1: 'test',
+    width: 1024,
+    heigth: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    }
+};
+
+console.log(Object.keys(options).length); 
+//определяет количество ключей в обьекте
